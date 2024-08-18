@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-rental</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="header-right">
+            <div class="social-icons">
+                <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="icons/x_icon.svg" alt="Twitter"></a>
+                <a href="#"><img src="icons/linkedIn.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="header-left">
+                <img src="icons/logo1.svg" alt="Diamondlease Logo" class="logo">
+                <img src="icons/logo2.svg" alt="Al Habtoor Logo" class="sub-logo">
+            </div>
+            <nav class="menu-top">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><img src="icons/notification.svg" alt="Notification"></li>
+                    <li><img src="icons/profile.svg" alt="Profile" class="notification"></li>
+                </ul>
+            </nav>
+        </div>  
+        
+        <div class="side-bar">
+            <img
+              src="./resources/assets/Group 1261156498chlose.svg" alt="Close Icon For Side Bar" id="closeButtonIcon"
+              width="24"
+              height="24"
+            />
+            <div class="drop-navMenu">
+              <a href="">About</a>
+              <hr />
+              <a href="">Offers</a>
+              <hr />
+              <a href="">Coporate</a>
+              <hr />
+              <a href="">Personal</a>
+              <hr />
+              <a href="">Locations</a>
+              <hr />
+              <a href="">Contact Us</a>
+              <button class="loginSignUpButton">Login/Sign Up</button>
+            </div>
+          </div>
+    </header>
+
+    <marquee scrollamount="10" class="sub-text">
+        Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | 
+        All Rates inclusive of VAT. T&C’s apply | Follow us on Social Media for New Offers
+    </marquee>
+
+    <main>
+        <!-- BOOKING SECTION -->
+        <section id="quickBook">
+            <img src="icons/quick_book_bg.svg" alt="booking-container-bg">
+            <div class="booking-container-content">
+            <div id="tabs">
+              <ul id="tabsList">
+                <li class="tabsLi"><a href="#">Same as Pick-Up</a></li>
+                <li class="tabsLi"><a href="#">Different Drop-Off</a></li>
+                <li>
+                  <select name="vehicle" id="vehicleSelect">
+                    <option value="default" selected disabled hidden>
+                      Select Vehicle Type
+                    </option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <div id="bookInput">
+              <select name="location" id="locationSelect">
+                <option value="default" selected disabled hidden>Al Quaz</option>
+                <option value="sedan">Dubai</option>
+                <option value="sedan">Saudi</option>
+              </select>
+    
+              <input
+                id="startTime"
+                type="datetime-local"
+                value="2023-10-30T09:00"
+              />
+              <input id="endTime" type="datetime-local" value="2023-10-30T09:00" />
+              <button id="searchButton">
+                <img
+                  src="icons/search-button.svg"
+                  alt=""
+                />
+              </button>
+              <div id="vDivider"></div>
+              <button id="quickBookButton">Quick Book</button>
+            </div>
+    
+            <div id="appStore">
+              <p id="downloadPara">
+                Download our App for easy accessibility anytime, anywhere!
+              </p>
+              <div id="appImages">
+                <img
+                  class="storeDownloadImage"
+                  src="icons/appstore.svg"
+                  alt=""
+                />
+                <img
+                  class="storeDownloadImage"
+                  src="icons/googleplay.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+        </div>
+          </section>
+    
+          <div class="icons-side">
+            <button id="iconButton" class="iconButton">
+              <img src="icons/phone-icon.svg" alt="">
+            </button>
+            <button id="iconButton" class="iconButton">
+              <img src="icons/side-icon-bg.svg" alt="" class="side-button-bg">
+              <img src="icons/side-icon.svg" alt="" class="side-button-icon">
+            </button>
+          </div>
+    
+          <section id="quickBookMobile">
+            <div id="bookDropdownMenu">
+              <button id="BookACar">Book a car</button>
+              <button id="bookQuick">Quick book</button>
+            </div>
+    
+            <div id="bookTabs">
+              <ul id="tabsListMv">
+                <li class="tabsLiMv"><a href="#">Same as Pick-Up</a></li>
+                <li class="tabsLiMv"><a href="#">Different Drop-Off</a></li>
+                <li>
+                  <select name="vehicle" id="vehicleSelectmv">
+                    <option value="default" selected disabled hidden>
+                      Vehicle Type
+                    </option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                  </select>
+                </li>
+              </ul>
+              <ul id="quickBookmobileInput">
+                <li id="quickBookLi">
+                  <select name="pickup" id="pickupSelectmv">
+                    <option value="default" selected disabled hidden>
+                      Pick up location
+                    </option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                  </select>
+                </li>
+                <li id="quickBookLi">
+                  <select name="vehicle" id="dropOffLocation">
+                    <option value="default" selected disabled hidden>
+                      Drop off location
+                    </option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="suv">SUV</option>
+                  </select>
+                </li>
+                <li id="quickBookLi">
+                  <input id="pickupDate"
+                    type=""
+                    placeholder="Pick-Up Date and Time"
+                  />
+                </li>
+                <li id="quickBookLi"><input id="dropOffDate"
+                  type=""
+                  placeholder="Drop off Date and Time"
+                />
+              </li><button id="quickbookSearch">Search</button></li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- SLIDESHOW SECTION -->
+        <section class="slideshow">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="icons/slider-image.svg">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="icons/slider-image.svg">
+                </div>
+              
+                <div class="mySlides fade">
+                    <img src="icons/slider-image.svg">
+                </div>
+                <p>Receive guaranteed <span class="gift-button">GIFT VOUCHER</span><br>
+                    on a monthly hire or lease</p>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div>
+        </section>
+
+        <!-- POPULAR SECTION -->
+        <section class="popular">
+            <h2>Most popular cars</h2>
+            <div class="popular-content">
+                <div class="popular-car-box">
+                    <img src="icons/popular-bluecar.svg" alt="Mitsubishi Eclipse" class="car-image">
+                    <div class="car-content">
+                        <h3>Mitsubishi Eclipse</h3>
+                        <p>Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV mobility with signature Mitsubishi styling, technology and driving confidence.</p>
+                        <ul>
+                            <li><img src="icons/popular-icon1.svg" alt="Icon">6 People</li>
+                            <li><img src="icons/popular-icon2.svg" alt="Icon">Automatic</li>
+                            <li><img src="icons/popular-icon3.svg" alt="Icon">5 Doors</li>
+                            <li><img src="icons/popular-icon4.svg" alt="Icon">AC</li>
+                        </ul>
+                        <div class="popular-price">
+                            <p>AED 2700/ Monthly</p>
+                            <button class="popular-book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-car-box">
+                    <img src="icons/popular-redcar.svg" alt="Jac J7" class="car-image">
+                    <div class="car-content">
+                        <h3>Jac J7</h3>
+                        <p>S3 Plus has been rated Five-Star in C-NCAP including front impact, side impact, frontal side impact & Whipping test.</p>
+                        <ul>
+                            <li><img src="icons/popular-icon1.svg" alt="Icon">6 People</li>
+                            <li><img src="icons/popular-icon2.svg" alt="Icon">Automatic</li>
+                            <li><img src="icons/popular-icon3.svg" alt="Icon">5 Doors</li>
+                            <li><img src="icons/popular-icon4.svg" alt="Icon">AC</li>
+                        </ul>
+                        <div class="popular-price">
+                            <p>AED 2700/ Monthly</p>
+                            <button class="popular-book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBSCRIBE SECTION -->
+        <section class="subscribe">
+            <div class="subscribe-content-left">
+                <h3>Subscribe here for exclusive <br>
+                     offers and updates!</h3>
+                <div class="subscribe-input">
+                    <input type="text" placeholder="Name" class="enter-name" id="enter-name">
+                    <p id="name-error" class="error-message" style="color: red; display: none;"> *Required field</p>
+                    <input type="text" placeholder="Email" class="enter-email" id="enter-email">
+                    <p id="email-error" class="error-message" style="color: red; display: none;">*Required field</p>
+                </div>
+                <p class="subscribe-content-left-des">Don't miss out! enter your email and your name, then hit subscribe to <br>
+                     unlock a world of special offers and details.</p>
+                <button class="subscribe-button" id="subscribe-button">Subscribe</button>
+            </div>
+            <div class="subscribe-content-right">
+                <div class="subscribe-image">
+                    <img src="icons/subscribe-phone.svg" alt="Phone Image">
+                </div>
+                <div class="subscribe-number">
+                    <p class="subscribe-number-heading">Enter your number and receive <br>
+                       a direct link to download the app</p>
+                    <input type="text" placeholder="Enter phone number" class="enter-number" id="enter-number">
+                    <p id="number-error" class="number-error-message" >*Required field</p>
+                    <button class="subscribe-link-button" id="subscribe-link-button">Get the link</button>
+                    <p class="subscribe-text">Get in on</p>
+                    <div class="subscribe-app-button">
+                        <img src="icons/subscribe-appstore.svg" alt="App Store">
+                        <img src="icons/subscribe-googleplay.svg" alt="Google Play">
+                    </div>
+                </div>
+            </div>
+
+            <div id="subscribeDiv2Mobile">
+                <div id="subscribeDiv2Main">
+                  <img
+                    id="mobileAppImgMV"
+                    src="./resources/assets/Rectangle.svg"
+                    alt=""
+                  />
+                  <div id="DownloadLinkDiv">
+                    <p id="getItOnParaMV">Get it on</p>
+                    <div id="StoreLinksMV">
+                      <img src="./resources/assets/googlePlay.svg" alt="" />
+                      <br />
+                      <img src="./resources/assets/appleStore.svg" alt="" />
+                    </div>
+                    <p id="downloadLinkParaMV">
+                      Enter your number and receive a direct link <br />to download
+                      the app
+                    </p>
+                  </div>
+                </div>
+                <div id="downloadInputDiv">
+                  <input
+                    id="subscribePhoneInputMV"
+                    type="phone"
+                    placeholder="Enter Phone Number"
+                  />
+                  <button id="getLinkButton">Get the link</button>
+                </div>
+              </div>
+      
+        </section>
+
+        <!-- RENT/LEASE SECTION -->
+        <section>
+            <div class="rent-heading">
+                <h2>Rent/Lease In three easy steps</h2>
+            </div>
+            <div class="rent-content">
+                <div class="rent-box">
+                    <img src="icons/rent-1.svg" alt="Step one">
+                    <div class="rent-box-content">
+                        <img src="icons/rent-location.svg" alt="Location">
+                        <p>Select the location. Browse through <br>
+                            our available options and find the <br>
+                            perfect car to suit your needs</p>
+                    </div>
+                </div>
+                <div class="rent-box">
+                    <img src="icons/rent-2.svg" alt="Step two">
+                    <div class="rent-box-content">
+                        <img src="icons/rent-calender.svg" alt="Calender">
+                        <p>Choose your desired Pick-Up 
+                            date and time.</p>
+                    </div>
+                </div>
+                <div class="rent-box">
+                    <img src="icons/rent-3.svg" alt="Step three">
+                    <div class="rent-box-content">
+                        <img src="icons/rent-car.svg" alt="Payment">
+                        <p>Make payment and book the car. Select an 
+                            option to either have the car delivered to 
+                            your location or pick it up directly from us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section class="location-section">
+            <div class="location-heading">
+                <h3>Locations</h3>
+            </div>
+            <div class="location-content">
+                <ul>
+                    <li><img src="icons/location.svg" alt="Dubai">Dubai</li>
+                    <li><img src="icons/location.svg" alt="Abu Dhabi">Abu Dhabi</li>
+                    <li><img src="icons/location.svg" alt="Sharjah">Sharjah</li>
+                    <li><img src="icons/location.svg" alt="Fujairah">Fujairah</li>
+                    <li><img src="icons/location.svg" alt="Ras Al Khaimah">Ras Al Khaimah</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq-section">
+            <h2>Frequently asked questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is my eligibility to book a car?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You should be of 18 years old above and you must possess a valid driving license</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can i book for any period of time?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can book for any duration, from a few hours to several months.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can i opt car for a longer period?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can rent a car for an extended period, such as weeks or months.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can i book one-way trip?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, one-way trips are available for booking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is there home delivery option available?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer home delivery for your rental car.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How can i make the payment?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can pay online using credit/debit cards or through other accepted payment methods.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="icons/logo2.svg" alt="Al Habtoor Logo">
+                <p>Member of the <br>
+                    Al Habtoor Group</p>
+            </div>
+            <div class="footer-centre">
+                <div class="footer-centre-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="footer-offers">Offers</a></li>
+                        <li><a href="#" class="footer-faq">FAQ</a></li>
+                        <li><a href="#" class="footer-career">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer-centre-content">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#" class="footer-locations">Locations</a></li>
+                        <li><a href="#" class="footer-privacy">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-centre-content">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#" class="footer-contact">Contact Us</a></li>
+                        <li><a href="#" class="footer-service">Service Request</a></li>
+                    </ul>
+                </div>
+                <div class="footer-centre-content">
+                    <ul>
+                        <li><a href="#">Al Habtoor Companies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-centre-content">
+                    <ul class="footer-centre-last">
+                        <li><a href="#">Hospitality</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Publishing</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Vehicle Leasing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>FOLLOW US ON</p>
+                <div class="footer-social-icons">
+                    <img src="icons/footer-facebook.svg" alt="Facebook">
+                    <img src="icons/footer-x.svg" alt="Twitter">
+                    <img src="icons/footer-instagram.svg" alt="Instagram">
+                    <img src="icons/footer-linkedin.svg" alt="LinkedIn">
+                    <img src="icons/footer-youtube.svg" alt="YouTube">
+                </div>
+                <div class="footer-icons">
+                    <img src="icons/footer-icon1.svg" alt="">
+                    <img src="icons/footer-icon2.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <span>© 2018 Diamondlease LLC - All Rights Reserved.</span>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
