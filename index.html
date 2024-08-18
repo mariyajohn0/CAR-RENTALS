@@ -22,6 +22,7 @@
                 <img src="icons/logo1.svg" alt="Diamondlease Logo" class="logo">
                 <img src="icons/logo2.svg" alt="Al Habtoor Logo" class="sub-logo">
             </div>
+    
             <nav class="menu-top">
                 <ul>
                     <li><a href="#">About</a></li>
@@ -35,28 +36,6 @@
                 </ul>
             </nav>
         </div>  
-        
-        <div class="side-bar">
-            <img
-              src="./resources/assets/Group 1261156498chlose.svg" alt="Close Icon For Side Bar" id="closeButtonIcon"
-              width="24"
-              height="24"
-            />
-            <div class="drop-navMenu">
-              <a href="">About</a>
-              <hr />
-              <a href="">Offers</a>
-              <hr />
-              <a href="">Coporate</a>
-              <hr />
-              <a href="">Personal</a>
-              <hr />
-              <a href="">Locations</a>
-              <hr />
-              <a href="">Contact Us</a>
-              <button class="loginSignUpButton">Login/Sign Up</button>
-            </div>
-          </div>
     </header>
 
     <marquee scrollamount="10" class="sub-text">
@@ -69,7 +48,7 @@
         <section id="quickBook">
             <img src="icons/quick_book_bg.svg" alt="booking-container-bg">
             <div class="booking-container-content">
-            <div id="tabs">
+            <div id="tabs" class="tabs">
               <ul id="tabsList">
                 <li class="tabsLi"><a href="#">Same as Pick-Up</a></li>
                 <li class="tabsLi"><a href="#">Different Drop-Off</a></li>
@@ -85,24 +64,17 @@
                 </li>
               </ul>
             </div>
-            <div id="bookInput">
+            <div id="bookInput" class="bookInput">
               <select name="location" id="locationSelect">
                 <option value="default" selected disabled hidden>Al Quaz</option>
                 <option value="sedan">Dubai</option>
                 <option value="sedan">Saudi</option>
               </select>
     
-              <input
-                id="startTime"
-                type="datetime-local"
-                value="2023-10-30T09:00"
-              />
+              <input id="startTime" type="datetime-local" value="2023-10-30T09:00"/>
               <input id="endTime" type="datetime-local" value="2023-10-30T09:00" />
               <button id="searchButton">
-                <img
-                  src="icons/search-button.svg"
-                  alt=""
-                />
+                <img src="icons/search-button.svg" alt=""/>
               </button>
               <div id="vDivider"></div>
               <button id="quickBookButton">Quick Book</button>
@@ -113,21 +85,28 @@
                 Download our App for easy accessibility anytime, anywhere!
               </p>
               <div id="appImages">
-                <img
-                  class="storeDownloadImage"
-                  src="icons/appstore.svg"
-                  alt=""
-                />
-                <img
-                  class="storeDownloadImage"
-                  src="icons/googleplay.svg"
-                  alt=""
-                />
+                <img class="storeDownloadImage" src="icons/appstore.svg" alt=""/>
+                <img class="storeDownloadImage" src="icons/googleplay.svg" alt=""/>
               </div>
             </div>
         </div>
           </section>
+
+          <!-- Booking Section for Mobile -->
+          <section id="booking-mobile">
+            <img src="icons/bg_mobile.svg" class="booking-container-bg-mobile" alt="">
+            <div id="appStore-mobile">
+                <p id="downloadPara">
+                  Download our App for easy accessibility anytime, anywhere!
+                </p>
+                <div id="appImages">
+                  <img class="storeDownloadImage" src="icons/appstore.svg" alt=""/>
+                  <img class="storeDownloadImage" src="icons/googleplay.svg" alt=""/>
+                </div>
+              </div>
+          </section>
     
+          <!-- Side icon -->
           <div class="icons-side">
             <button id="iconButton" class="iconButton">
               <img src="icons/phone-icon.svg" alt="">
@@ -138,6 +117,7 @@
             </button>
           </div>
     
+          <!-- Quick Book for Mobile -->
           <section id="quickBookMobile">
             <div id="bookDropdownMenu">
               <button id="BookACar">Book a car</button>
@@ -181,16 +161,11 @@
                   </select>
                 </li>
                 <li id="quickBookLi">
-                  <input id="pickupDate"
-                    type=""
-                    placeholder="Pick-Up Date and Time"
-                  />
+                  <input id="pickupDate" type="" placeholder="Pick-Up Date and Time"/>
                 </li>
-                <li id="quickBookLi"><input id="dropOffDate"
-                  type=""
-                  placeholder="Drop off Date and Time"
-                />
-              </li><button id="quickbookSearch">Search</button></li>
+                <li id="quickBookLi">
+                    <input id="dropOffDate" type="" placeholder="Drop off Date and Time"/>
+                </li><button id="quickbookSearch">Search</button></li>
               </ul>
             </div>
           </section>
@@ -293,18 +268,15 @@
                 </div>
             </div>
 
+            <!-- Subscribe Section for Mobile -->
             <div id="subscribeDiv2Mobile">
                 <div id="subscribeDiv2Main">
-                  <img
-                    id="mobileAppImgMV"
-                    src="./resources/assets/Rectangle.svg"
-                    alt=""
-                  />
+                  <img id="mobileAppImgMV" src="./resources/assets/Rectangle.svg" alt=""/>
                   <div id="DownloadLinkDiv">
                     <p id="getItOnParaMV">Get it on</p>
                     <div id="StoreLinksMV">
                       <img src="./resources/assets/googlePlay.svg" alt="" />
-                      <br />
+                      <br/>
                       <img src="./resources/assets/appleStore.svg" alt="" />
                     </div>
                     <p id="downloadLinkParaMV">
@@ -322,7 +294,6 @@
                   <button id="getLinkButton">Get the link</button>
                 </div>
               </div>
-      
         </section>
 
         <!-- RENT/LEASE SECTION -->

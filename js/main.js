@@ -1,3 +1,4 @@
+// SLIDESHOW SECTION
 let slideIndex = 0;
 showSlides();
 
@@ -15,13 +16,14 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); 
 }
 
 
 // SUBSCRIBE SECTION VALIDATION
+// Name and Email Validation
 document.getElementById('subscribe-button').addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+  event.preventDefault(); 
 
   var name = document.getElementById('enter-name').value.trim();
   var email = document.getElementById('enter-email').value.trim();
@@ -29,7 +31,6 @@ document.getElementById('subscribe-button').addEventListener('click', function(e
   var nameError = document.getElementById('name-error');
   var emailError = document.getElementById('email-error');
   
-  // Reset previous error messages
   nameError.style.display = 'none';
   emailError.style.display = 'none';
   
@@ -54,30 +55,26 @@ document.getElementById('subscribe-button').addEventListener('click', function(e
       }
   }
 
-  // If the form is valid, you can proceed
   if (isValid) {
       document.getElementById('enter-name').value = '';
       document.getElementById('enter-email').value = '';
 
-       // Change button color
        var button = document.getElementById('subscribe-link-button');
        button.classList.add('button-clicked');
        
-       // Optionally, you can remove the class after a few seconds
        setTimeout(function() {
            button.classList.remove('button-clicked');
-       }, 2000); // Adjust the timeout duration as needed
+       }, 2000); 
   }
 });
 
-
+// Phone Number Validation
 document.getElementById('subscribe-link-button').addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+  event.preventDefault(); 
 
   var number = document.getElementById('enter-number').value.trim();
   var numberError = document.getElementById('number-error');
   
-  // Reset previous error messages
   numberError.style.display = 'none';
   
   var isValid = true;
@@ -87,7 +84,6 @@ document.getElementById('subscribe-link-button').addEventListener('click', funct
       isValid = false;
       numberError.style.display = 'block';
   } else {
-      // Optional: Add phone number format validation if needed
       var phonePattern = /^\d{10,}$/;
       if (!phonePattern.test(number)) {
           isValid = false;
@@ -96,18 +92,15 @@ document.getElementById('subscribe-link-button').addEventListener('click', funct
       }
   }
 
-  // If the form is valid, you can proceed
   if (isValid) {
       document.getElementById('enter-number').value = '';
 
-       // Change button color
        var button = document.getElementById('subscribe-link-button');
        button.classList.add('button-clicked');
        
-       // Optionally, you can remove the class after a few seconds
        setTimeout(function() {
            button.classList.remove('button-clicked');
-       }, 2000); // Adjust the timeout duration as needed
+       }, 2000); 
   }
 });
 
