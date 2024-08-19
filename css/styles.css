@@ -4,172 +4,210 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
-  overflow-x: hidden;
-  font-family: "Poppins";
+  font-family: "poppins";
 }
 
-/* HEADER */
+main,
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 64px;
+  padding: 0px 64px;
 }
 
-.header-top {
-  display: flex;
-  justify-content: space-between;
+button {
+  cursor: pointer;
+}
+
+/* HEADER SECTION */
+nav {
+  height: 121px;
   width: 100%;
+  padding: 15px 0px;
 }
 
-.header-left {
+#navSocial {
+  justify-content: flex-end;
   display: flex;
-  align-items: center;
 }
 
-.logo {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.sub-logo {
-  height: 30px;
-}
-
-.menu-top {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  margin-top: 10px;
-}
-.menu-top ul {
+#navSocialList {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+  height: 15px;
 }
 
-.menu-top ul li {
-  margin: 0 20px;
-}
-
-.menu-top ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 300;
-  font-size: 15px;
-}
-.menu-top ul li a:hover {
-  text-decoration: underline;
-}
-
-.menu-top ul li img {
-  height: 24px;
+.navSocailLi {
+  margin-right: 16px;
   cursor: pointer;
-  vertical-align: middle;
 }
 
-.header-right {
+#linkedIn {
+  margin: 0;
+}
+
+#navLeft {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  justify-content: space-between;
 }
 
-.social-icons {
+#navList {
   display: flex;
+}
+
+#navLinkList {
+  display: flex;
+  list-style: none;
   align-items: center;
 }
 
-.social-icons a {
-  margin: 0 5px;
+.navLinkLi {
+  margin-left: 32px;
 }
 
-.social-icons img {
-  height: 20px;
+.navLinkLi a {
+  text-decoration: none;
+  padding: 10px 0px;
+  display: inline-block;
+  color: black;
 }
 
-.sub-text {
-  text-align: center;
-  font-size: 12px;
-  color: #777;
-  margin: 10px 0 10px 0;
-  padding: 5px 64px;
-  background-color: #fff;
+.navLinkLi a:hover {
+  color: rgb(143, 143, 143);
 }
 
-/* .side-bar {
-    background-color: white;
-    display: none;
-    flex-direction: column;
-    width: 300px;
-    height: 543px;
-    padding: 56px 32px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
+#avatarButton {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 19px;
 }
 
-#closeButtonIcon {
-    float: right;
+#avatarButton:hover {
+  background-color: rgb(99, 97, 97);
+}
+
+#avatar {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 5px;
+}
+
+#navLinkButtonLi {
+  display: flex;
+}
+
+#notificationButton {
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+}
+
+#navPickUp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navMarquee {
+  font-size: 10px;
+  justify-content: flex-end;
+  color: #808080;
+  letter-spacing: -3.5%;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.side-bar {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  height: 543px;
+  padding: 56px 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#closeButton {
+  float: right;
 }
 
 .drop-navMenu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .drop-navMenu a {
-    text-decoration: none;
-    color: black;
-    margin: 20px 0px;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    text-align: left;
-
+  text-decoration: none;
+  color: black;
+  margin: 20px 0px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
 }
 
-.loginSignUpButton {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    padding: 4px 20px;
+.loginButton {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 20px;
+  cursor: pointer;
 }
 
-.loginSignUpButton:hover {
-    background-color: rgb(70, 70, 70);
+.loginButton:hover {
+  background-color: rgb(70, 70, 70);
 }
 
 .side-bar.active {
-    display: flex;
+  display: flex;
 }
 
 .side-bar.inactive {
-    display: none;
-} */
+  display: none;
+}
 
-/* BOOKING SECTION */
+.iconss-side {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  z-index: 1;
+}
+
+/* QUICK BOOK STYLING */
 #quickBook {
+  background-image: url("../icons/quick_book_bg.svg");
   height: 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 15px;
-  margin-left: 118px;
+  padding: 18px 81px;
   position: relative;
 }
-.booking-container-bg {
-  position: absolute;
-  left: 50px;
-  z-index: -1;
-}
-.booking-container-content {
-  margin-left: 40px;
-  margin-top: -210px;
-}
+
 .icons-side {
   display: flex;
   flex-direction: column;
@@ -178,22 +216,24 @@ header {
   gap: 20px;
   top: 180px;
 }
+
 .icons-side button {
   border: none;
   background: transparent;
-  cursor: pointer;
 }
+
 .side-button-bg {
   margin-right: -45px;
   margin-bottom: -10px;
 }
-#tabsList {
+
+#quickBookTabsList {
   list-style: none;
   font-size: 14px;
   display: flex;
 }
 
-.tabsLi {
+.quickBookTabsLi {
   padding: 16px;
   padding-left: 0;
   display: flex;
@@ -201,13 +241,13 @@ header {
   justify-content: center;
 }
 
-.tabsLi a {
+.quickBookTabsLi a {
   color: #dfdfdf;
   text-decoration: none;
   display: inline-block;
 }
 
-.tabsLi a:hover {
+.quickBookTabsLi a:hover {
   border-bottom: 1px solid white;
   color: white;
 }
@@ -227,6 +267,7 @@ header {
   border: none;
   margin-right: 16px;
   margin-bottom: 4px;
+  flex: 1;
   cursor: pointer;
 }
 
@@ -235,7 +276,6 @@ header {
   border: none;
   margin-right: 16px;
   margin-bottom: 4px;
-  cursor: pointer;
 }
 
 #vDivider {
@@ -251,11 +291,12 @@ header {
   color: white;
   padding: 10px 77px;
   border-radius: 16px;
-  cursor: pointer;
 }
+
 #quickBookButton:hover {
   background-color: #ffffff6f;
 }
+
 #appStore {
   display: flex;
   align-items: center;
@@ -290,10 +331,6 @@ header {
 }
 
 #quickBookMobile {
-  display: none;
-}
-
-#booking-mobile {
   display: none;
 }
 
@@ -362,103 +399,141 @@ header {
 }
 
 /* POPULAR SECTION  */
-.popular {
-  margin-top: 41px;
+.popularSection {
+  padding-top: 10px;
 }
-.popular h2 {
+
+#popularCardRow {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: none;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 10px 0;
+  width: calc(100% - 20px);
+}
+
+#popularSectionH2 {
+  margin: 40px 0;
   font-size: 34.74px;
   font-weight: 400;
+  line-height: 52.11px;
   text-align: center;
 }
-.popular-content {
+
+.popularCarCard {
   display: flex;
-  margin-top: 40px;
-  margin-left: 100px;
-  overflow-x: auto;
-  width: 100%;
-}
-.popular-car-box {
-  display: flex;
-  max-width: 754px;
   height: 290px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  align-items: center;
-  margin-left: 22px;
+  width: 754px;
+  border: 1px solid #d9d9d9;
+  margin-right: 22px;
+  flex-shrink: 0;
 }
-.car-content {
-  margin: 25px 40px;
+
+.popularCarCardInfo {
+  padding: 20px 40px;
+  width: 394px;
 }
-.car-content h3 {
+
+.popularCarCardInfoHeading {
   font-size: 28px;
   font-weight: 500;
+  line-height: 42px;
 }
-.car-content p {
+
+.popularCarCardInfoPara {
   font-size: 12px;
   font-weight: 400;
+  line-height: 18.5px;
+  text-align: left;
+  width: 298px;
 }
-.car-content ul {
+
+.popularCarUl {
+  list-style: none;
   display: flex;
-  height: 17px;
-  justify-content: space-between;
-  margin-top: 42px;
+  margin-top: 52px;
 }
-.car-content ul li {
+
+.popularcarLi {
   font-size: 11px;
   font-weight: 500;
-  list-style: none;
-  align-content: center;
-}
-.car-content ul li img {
-  margin-right: 10px;
-  margin-top: 1px;
-}
-.popular-price {
+  line-height: 16.5px;
+  letter-spacing: -0.02em;
+  text-align: left;
   display: flex;
-  margin-top: 35px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  width: auto;
 }
-.popular-price p {
+
+.popularcarLi img {
+  margin-right: 8px;
+}
+
+.popularcarLi p {
+  width: 60px;
+}
+
+.popularCardCost {
   font-size: 16px;
   font-weight: 600;
+  line-height: 24px;
+  text-align: left;
 }
-.popular-book-now {
-  background-color: #e21e26;
-  width: 98px;
-  height: 37px;
-  border-radius: 10px 10px 10px 10px;
+
+.popularCarCardInfo2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.bookNowButton {
+  width: 128px;
+  height: 38px;
+  border-radius: 4px;
   border: none;
-  cursor: pointer;
+  opacity: 1;
   font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  background-color: #e21e26;
+  margin: 10px 0px;
 }
 
 /* SUBSCRIBE SECTION */
-.subscribe {
+#subscribe {
   display: flex;
-  flex-direction: row;
-  width: 1234px;
-  height: 506px;
+  flex-wrap: wrap;
+  margin-left: 89px;
   margin-top: 40px;
-  margin-left: 142px;
 }
-.subscribe-content-left {
-  width: 590px;
+
+#subscribeDiv1 {
+  width: 50%;
 }
-.subscribe-content-left h3 {
+
+#subscribeDiv1Heading {
   font-size: 34px;
   font-weight: 400;
-  margin-top: 38px;
-  margin-right: 110px;
+  line-height: 51px;
+  text-align: left;
+  margin: 38px 40px 38px 0px;
 }
-.subscribe-input {
-  display: flex;
+
+#subscribeDiv1InputDiv input {
+  width: 223px;
   height: 45px;
-  margin-top: 41px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 13px 20px;
+  margin-bottom: 16px;
 }
+
 .enter-name,
 .enter-email {
   background-color: #f8f8f8;
@@ -467,25 +542,42 @@ header {
   width: 223px;
   padding-left: 20px;
 }
+
 .enter-email {
   margin-left: 17.89px;
 }
+
 .error-message {
   color: red;
   font-size: 12px;
   margin-top: 2px;
-  display: none; 
+  display: none;
   position: relative;
-  bottom: -45px;
-  left: -170px;
   width: 100%;
 }
 
-.subscribe-content-left-des {
+#subscribeDiv1Para {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 30px;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 40px;
+  width: 75%;
 }
+
+#subscribe-button {
+  background-color: #e21e26;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  padding: 16px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
 .subscribe-button {
   background-color: #e21e26;
   height: 57.08px;
@@ -498,38 +590,38 @@ header {
   color: #ffffff;
   margin-top: 40px;
 }
+
 .subscribe-button:hover {
   background-color: #da4b50;
 }
-.subscribe-content-right {
-  display: flex;
+
+#subscribeDiv2 {
   background-color: #e21e26;
-  width: 744px;
-}
-.subscribe-image {
-  margin-top: 48px;
-  margin-right: 24px;
-  margin-left: 71px;
-}
-.subscribe-number {
   display: flex;
-  flex-direction: column;
+  padding: 48px 72px;
+  width: 50%;
 }
-.subscribe-number-heading {
+
+#downloadLinkPara {
   font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  margin-top: 123.42px;
+  font-weight: 500;
+  line-height: 21.5px;
+  text-align: left;
+  color: white;
+  margin-top: 76px;
 }
-.enter-number {
-  width: 263px;
+
+#enter-number {
+  width: 85%;
   height: 45px;
-  background-color: #f8f8f8;
+  border-radius: 5px 0px 0px 0px;
+  padding: 22px 13.7px;
+  border-radius: 5px;
   border: none;
-  border-radius: 10px 10px 10px 10px;
-  margin-top: 12.58px;
-  padding-left: 20px;
+  background-color: #f8f8f8;
+  margin-bottom: 24px;
 }
+
 .number-error-message {
   color: #ffffff;
   font-size: 12px;
@@ -540,31 +632,38 @@ header {
   left: 0px;
   width: 100%;
 }
-.subscribe-link-button {
-  width: 144px;
-  height: 42px;
-  background-color: #000;
-  color: #ffffff;
-  margin-top: 23.42px;
-  border: none;
-  border-radius: 10px 10px 10px 10px;
-  cursor: pointer;
-}
-.subscribe-link-button:hover {
-  background-color: #3d3d3d;
-}
-.subscribe-text {
-  font-size: 14px;
-  font-weight: 500;
-  color: #ffffff;
-  margin-top: 45px;
-}
-.subscribe-app-button {
-  margin-top: 16px;
-  row-gap: 8px;
+
+#StoreLinks img {
+  display: flex;
   cursor: pointer;
 }
 
+#subscribe-link-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+.subscribe-link-button:hover {
+  background-color: #3d3d3d;
+}
+
+#getItOnPara {
+  color: white;
+  margin: 45px 0px 16px 0px;
+}
+
+#StoreLinks {
+  display: flex;
+}
+
+#StoreLinks img {
+  margin-left: 8px;
+}
+
+/* SUBSCRIBE DIV2 MOBILE VIEW */
 #subscribeDiv2Mobile {
   display: none;
   background-color: #e21e26;
@@ -589,7 +688,7 @@ header {
   padding: 16px;
 }
 
-#subscribePhoneInputMV {
+#enter-numberMV {
   width: 100%;
   height: 45px;
   border-radius: 5px 0px 0px 0px;
@@ -620,85 +719,110 @@ header {
 }
 
 /* RENT/LEASE SECTION */
-.rent-heading h2 {
-  font-size: 34px;
-  font-weight: 400;
+#rentSteps {
+  text-align: center;
   margin-top: 40px;
-  margin-left: 469px;
-}
-.rent-content {
-  margin-top: 40px;
-  margin-left: 153px;
-  display: grid;
-  grid-template-columns: repeat(3, 348px);
-  gap: 50px;
-}
-.rent-box {
-  justify-content: center;
-  align-items: center;
-}
-.rent-box img {
-  margin-left: 110px;
-}
-.rent-box-content {
-  align-self: center;
-  margin-top: 20px;
-}
-.rent-box-content p {
-  margin-top: 35px;
+  margin-bottom: 80px;
 }
 
-/* LOCATION SECTION */
-.location-section {
-  background-color: #000;
-  margin: 80px 64px 0;
-  height: 325px;
+#rentStepsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.location-heading h3 {
-  color: #ffffff;
-  margin-left: 569px;
-  padding-top: 56px;
+
+.rentStepCols {
+  justify-content: center;
+  width: 348px;
+  height: auto;
+}
+
+#rentStepsHeading {
   font-size: 34px;
   font-weight: 400;
+  line-height: 51px;
+  text-align: center;
 }
-.location-content ul {
-  display: flex;
-  flex-direction: row;
+
+.rentSteph3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #e21e26;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.rentStepSubdiv {
+  width: 348px;
+  height: 178px;
+  border: 1px solid black;
+}
+
+.rentStepSubdiv img {
+  margin-top: 16px;
+}
+
+.rentDivPara {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.5px;
+  text-align: center;
+  margin: 0px 40px 16px 40px;
+}
+
+#location {
+  background-color: black;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+#locationHeadings {
+  color: white;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+#locationUl {
   list-style: none;
-  margin-left: 111px;
-}
-.location-content ul li {
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 18.81px;
-  font-weight: 600;
-  margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   align-items: center;
-  padding: 0 61.12px;
-  position: relative;
+  justify-content: center;
 }
-.location-content ul li::after {
-  content: "";
-  width: 1px;
-  height: 20px;
-  background-color: #ffffff;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+.locationLi {
+  border-right: 2px solid #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 56px;
+  padding-right: 56px;
+  margin-bottom: 65px;
 }
-.location-content ul li:last-child::after {
-  display: none;
+
+.locationLi span {
+  margin-left: 16px;
+  color: #ffffff;
 }
-.location-content ul li img {
-  margin-right: 10px;
+
+#locationLiEnd {
+  border: none;
 }
 
 /* FAQ SECTION */
 .faq-section {
-  width: 1140px;
-  margin-left: 175px;
+  width: 100%;
   margin-bottom: 119px;
 }
 .faq-section h2 {
@@ -736,140 +860,230 @@ header {
 }
 
 /* FOOTER */
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.footermoblile {
+  display: none;
 }
-.footer-content {
+
+.footerdiv {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #000;
-}
-.footer-left,
-.footer-centre,
-.footer-right {
-  margin: 100px;
-}
-.footer-left p {
-  color: #ffffff;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  color: rgba(255, 255, 255, 1);
   font-weight: 500;
+}
+
+.footerdiv-2 {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 0;
+}
+
+.footerdiv-3 {
+  padding-left: 120px;
+  display: flex;
+  width: 100%;
+  max-width: 1257px;
+  align-items: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerdiv-4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
 }
-.footer-centre-content ul {
-  list-style: none;
+.footerimg {
+  aspect-ratio: 0.86;
+  object-fit: contain;
+  object-position: center;
+  width: 57px;
+}
+.member-of-the-al-habtoor-group {
+  margin-top: 9px;
+}
+
+.footerdiv-5 {
   display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+  align-items: start;
+  gap: 40px 61px;
+  font-size: 13px;
+  flex-wrap: wrap;
 }
-.footer-offers {
-  margin-left: 72px;
-}
-.footer-faq {
-  margin-left: 80px;
-}
-.footer-career {
-  margin-left: 125px;
-}
-.footer-locations,
-.footer-privacy,
-.footer-terms {
-  margin-left: 50px;
-}
-.footer-contact {
-  margin-left: 55px;
-}
-.footer-service {
-  margin-left: 38px;
-}
-.footer-centre ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer-centre-last li {
-  margin-right: 20px;
-}
-.footer-right-text {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
-}
-.footer-right p {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.footer-social-icons img {
-  margin-right: 8px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.footer-icons img {
-  margin-right: 5px;
-}
-.footer-copy {
-  background-color: #000;
-  color: #ffffff;
+
+.footerdiv-6 {
   display: flex;
+  flex-direction: column;
+}
+
+.footerhome {
+  align-self: start;
+}
+.footerabout-us,
+.footerservices {
+  margin-top: 16px;
+}
+
+.footerdiv-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footerlocations,
+.footerprivacy-policy {
+  margin-top: 16px;
+}
+.footercontact-us {
+  align-self: stretch;
+  margin-top: 16px;
+}
+.footerdiv-8 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footerservice-request {
+  align-self: stretch;
+  margin-top: 18px;
+}
+.footerdiv-9 {
+  display: flex;
+  flex-direction: column;
+}
+.footercareer {
+  align-self: start;
+}
+.footerterms-conditions {
+  margin-top: 17px;
+}
+.footerdiv-10 {
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 138px;
+  max-width: 100%;
+}
+.footerimg-2 {
+  aspect-ratio: 8.13;
+  object-fit: contain;
+  object-position: center;
   width: 100%;
-  font-size: 14px;
-  font-weight: 500;
+  align-self: stretch;
+  margin-top: 10px;
+}
+.footerimg-3 {
+  aspect-ratio: 2.67;
+  object-fit: contain;
+  object-position: center;
+  width: 64px;
+  margin-top: 31px;
+}
+.al-habtoor-companies {
+  font-size: 13px;
+  margin-top: -35px;
+  margin-left: -420px;
+}
+.footerdiv-11 {
+  display: flex;
+  margin-top: 15px;
+  height: 24px;
+  width: 565px;
+  max-width: 100%;
+  align-items: center;
+  gap: 21px;
+  font-size: 13px;
+  letter-spacing: -0.46px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.footerhospitality {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+  margin-left: -35px;
+}
+.footerreal-estate,
+.footerpublishing,
+.footereducation {
+  line-height: 57px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.footerautomotive,
+.footervehicle-leasing {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.footerdiv-12 {
+  align-self: stretch;
+  min-height: 0px;
+  margin-top: 24px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.car-rental-llc-all-rights-reserved {
+  font-size: 12px;
+  margin-top: 24px;
 }
 
 /* For Mobile view */
-@media screen and (max-width: 768px) {
-    /* Header */
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
+@media only screen and (max-width: 786px) {
   main,
   header {
-    padding: 10px 16px;
+    padding: 0px 16px;
   }
-  .header-right {
-    display: none;
+
+  nav {
+    height: 80px;
+    padding: 15px 0px;
   }
-  .menu-top {
+
+  #companyLogo {
+    width: 156px;
+    height: 24px;
+  }
+
+  .navLinkLi {
+    margin-left: 15px;
+  }
+
+  #navLeft {
+    margin-bottom: 19px;
+  }
+
+  #navMarquee {
+    height: 15px;
+    overflow: hidden;
+  }
+
+  #name {
     display: none;
   }
 
-  .sub-text {
-    padding: 10px 20px;
+  #avatar {
+    margin: 0;
   }
 
-  /* Quick Book Section */
-  #quickBook {
-    display: none;
-  }
-  #appStore-mobile {
-    margin-top: -110px;
-    margin-left: 20px;
-  }
-  #downloadPara {
-    margin-top: -10px;
-    font-size: 13px;
-    text-align: center;
-  }
-  .booking-container-bg-mobile {
-    width: 380px;
-  }
-  #appImages {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  #quickBookMobile {
-    display: block;
-  }
-
-  .slideshow-container {
-    width: 600px;
+  #avatarButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-right: 6px;
   }
 
   /* POPULAR CAR */
@@ -880,7 +1094,7 @@ header {
     height: auto;
   }
 
-  #popularcarsH2 {
+  #popularSectionH2 {
     margin: 40px 0px;
     text-align: left;
     font-size: 16px;
@@ -997,7 +1211,7 @@ header {
     margin-bottom: 16px;
   }
 
-  #subscribeButton {
+  #subscribe-button {
     width: 128px;
     background-color: #e21e26;
     font-size: 16px;
@@ -1005,7 +1219,6 @@ header {
     line-height: 24px;
     text-align: center;
     color: white;
-    /* padding: 9px 32px; */
     border: none;
     border-radius: 5px;
   }
@@ -1026,10 +1239,6 @@ header {
     line-height: 24px;
     text-align: left;
   }
-
-  /* #rentStepsRow {
-            display: block;
-        } */
 
   /* LOCATION */
 
@@ -1077,7 +1286,6 @@ header {
   }
 
   /* FAQ */
-
   .faq-section {
     font-family: Poppins;
     font-size: 20px;
@@ -1087,6 +1295,11 @@ header {
     text-wrap: nowrap;
   }
 
+  .faq-section h2 {
+    font-size: 16px;
+  }
+
+  /* FOOTER */
   .footerdiv {
     display: none;
   }
@@ -1097,6 +1310,7 @@ header {
 
   .footermobile {
     background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px 0;
   }
@@ -1106,7 +1320,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f4f4f400; 
+    background-color: #f4f4f400;
   }
 
   .logo-section {
@@ -1115,8 +1329,8 @@ header {
   }
 
   .logo-section img {
-    max-width: 60px; 
-    margin-right: 10px; 
+    max-width: 60px;
+    margin-right: 10px;
   }
 
   .al-habtoor-text {
@@ -1127,11 +1341,11 @@ header {
   .social-icons-mobile-footer {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
   }
 
   .social-icons-mobile-footer a img {
-    max-width: 24px; 
+    max-width: 24px;
   }
 
   .middle-footer-mobile {
@@ -1162,7 +1376,7 @@ header {
   }
 
   .bottom-footer-mobile p {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   .companies-mobile-footer {
@@ -1185,5 +1399,170 @@ header {
   .secure-seal-mobile-footer img {
     width: 80px;
     margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #navLinkList {
+    display: none;
+  }
+
+  #navSocialList {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  #quickBookMobile {
+    display: block;
+  }
+
+  #bookInput {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  #quickBookTabs,
+  #bookInput {
+    display: none;
+  }
+
+  #quickBook {
+    height: 120px;
+    padding: 16px 40px;
+  }
+
+  #appStore {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #downloadPara {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  #quickBookMobile {
+    text-align: center;
+  }
+
+  #bookDropdownMenu {
+    display: flex;
+    text-align: center;
+    margin: 16px 16px;
+    justify-content: center;
+  }
+
+  #BookACar {
+    background-color: #e21e26;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+    margin-right: 8px;
+  }
+
+  #BookACar:hover {
+    background-color: #b6171c;
+  }
+
+  #bookQuick {
+    background-color: transparent;
+    border: 2px solid #e21e26;
+    color: #e21e26;
+    border-radius: 8px;
+    background-color: white;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+  }
+
+  #bookQuick:hover {
+    background-color: rgb(219, 219, 219);
+  }
+
+  #bookTabs {
+    display: none;
+  }
+
+  #bookTabs.active {
+    display: block;
+  }
+
+  #bookTabsListMv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .bookTabsLiMv a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    padding: 4px;
+  }
+
+  .tabsLiMv a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+
+  #vehicleSelectmv {
+    border: 0;
+  }
+
+  #quickBookLi {
+    list-style: none;
+  }
+
+  #pickupSelectmv,
+  #dropOffLocation,
+  #pickupDate,
+  #dropOffDate {
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f6f7f9;
+    border: none;
+    border-radius: 8px;
+  }
+
+  #quickbookSearch {
+    background-color: #e21e26;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    width: 160px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    height: 38px;
+    margin: 16px 64px;
   }
 }

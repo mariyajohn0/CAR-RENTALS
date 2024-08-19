@@ -1,3 +1,27 @@
+// MOBILE MENU BAR
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".menu");
+    const sidebar = document.querySelector(".side-bar");
+    const close = document.getElementById("closeButtonIcon");
+    const BookACar = document.getElementById("BookACar");
+    const bookTabs =  document.getElementById("bookTabs");
+
+    menu.addEventListener("click", () => {
+      console.log("clicked");
+      sidebar.classList.add("active");
+    });
+
+    close.addEventListener("click", () => {
+      console.log("clicked");
+      sidebar.classList.remove("active");
+    });
+
+    BookACar.addEventListener("click", () => {
+      console.log("clicked");
+      bookTabs.classList.toggle("active");
+    });
+  });
+
 // SLIDESHOW SECTION
 let slideIndex = 0;
 showSlides();
@@ -121,3 +145,11 @@ document.querySelectorAll('.faq-question').forEach((question) => {
       }
   });
 });
+
+
+
+
+  
+
+
+
