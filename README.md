@@ -50,4 +50,4 @@ car-rentals/
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/car-rentals.git 
+   git clone https://github.com/mariyajohn0/CAR-RENTALS.git
