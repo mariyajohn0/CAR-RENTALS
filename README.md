@@ -42,7 +42,10 @@ Car Rentals is a responsive, single-page car rental website designed using only 
 - **JavaScript**: Interactivity and functionality.  
 
 ## File Structure  
-car-rentals/ ├── index.html # Main HTML file containing all sections ├── styles.css # Styling for the website └── main.js # JavaScript for interactivity and slideshow functionality
+car-rentals/
+├── index.html # Main HTML file containing all sections
+├── styles.css # Styling for the website
+└── main.js # JavaScript for interactivity and slideshow functionality
 
 ### Installation  
 1. Clone the repository:  
